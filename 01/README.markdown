@@ -41,7 +41,7 @@
 
 Добавете метод `occurences_count` в `Array`, който връща хеш, съпоставящ елемент от масива на броя пъти, които се среща в него.
 
-    [:foo, :bar, :foo].occurences_count # {foo: 1, bar: 2}
+    [:foo, :bar, :foo].occurences_count # {foo: 2, bar: 1}
     %w[a a b c b a].occurences_count    # {a => 3, b => 2, c => 1}
 
 Когато елемент не се среща в масива, индексирането на хеша трябва да връща 0, без да изменя двойките му:
