@@ -14,6 +14,12 @@ describe "Array#subarray_count(subarray)" do
   it "counts the number of times the argument is present as a sub-array" do
     [1, 1, 2, 1, 1, 1].subarray_count([1, 1]).should eq 3
   end
+  it "says the empty array contains one empty array" do
+    [].subarray_count([]).should eq 1
+  end
+  it "says the empty array contains any none-empty aray zero times" do
+    [].subarray_count([1,2,3]).should eq 0
+  end
 end
 
 describe "Array#occurences_count" do
