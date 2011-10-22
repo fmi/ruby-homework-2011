@@ -20,6 +20,8 @@ class Array
   end
 
   def occurences_count
-    (zip collect {|x| count x}).to_hash
+    occurences = (zip collect {|x| count x}).to_hash
+    occurences.default = 0
+    occurences
   end
 end
