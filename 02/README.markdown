@@ -104,7 +104,7 @@ Eine Kleine Nachtmusik.       Mozart.             Classical.          popular, v
     collection.find tags: 'popular', artist: 'John Coltrane'
 
     # Връща имена на песни, които започват с думичката "My":
-    collection.find filter: ->(song) { |song| song.start_with?('My') }
+    collection.find filter: ->(song) { |song| song.name.start_with?('My') }
 
 ## Спецификацията
 
