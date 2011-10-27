@@ -61,16 +61,16 @@ Eine Kleine Nachtmusik.       Mozart.             Classical.          popular, v
 
 Първо трябва да създадете обекти, които представят песен. Няма значение от какъв клас са, стига да имат следните методи:
 
-    # My Favourite Things;    John Coltrane;      Jazz, Bebop;        popular
+    # My Favourite Things.    John Coltrane.      Jazz, Bebop.        popular
     song.name     # "My Favourite Things"
     song.artist   # "John Coltrane"
     song.genre    # "Jazz"
     song.subgenre # "Bebop"
     song.tags     # ['popular', 'jazz', 'bebop', 'saxophone']
 
-    # Eine Kleine Nachtmusik; W.A. Mozart;        Classical;          popular
+    # Eine Kleine Nachtmusik. Mozart.             Classical.          popular
     song.name     # "Eine Kleine Nachtmusik"
-    song.artist   # "W.A. Mozart"
+    song.artist   # "Mozart"
     song.genre    # "Classical"
     song.subgenre # nil
     song.tags     # ['classical', 'popular']
