@@ -50,7 +50,7 @@ Eine Kleine Nachtmusik.       Mozart.             Classical.          popular, v
 
     {
       'John Coltrane' => %w[saxophone],
-      'J.S. Bach' => %w[piano polyphony],
+      'Bach' => %w[piano polyphony],
     }
 
 Горното казва, че всички песни на Колтрейн трябва да имат етикет `saxophone`, а всички на Бах – етикети `piano` и `polyphony`.
