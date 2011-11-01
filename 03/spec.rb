@@ -1,4 +1,4 @@
-describe ShoppingCart do
+describe Inventory do
   let(:inventory) { Inventory.new }
   let(:cart) { inventory.new_cart }
 
