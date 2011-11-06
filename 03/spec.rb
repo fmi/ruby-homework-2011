@@ -221,7 +221,7 @@ INVOICE
   describe "with an 'amount off' coupon" do
     it "subtracts the amount form the total" do
       inventory.register 'Tea', '1.00'
-      inventory.register_coupon 'TEATIME', amount: '10.00'.to_d
+      inventory.register_coupon 'TEATIME', amount: '10.00'
 
       cart.use 'TEATIME'
 
@@ -231,7 +231,7 @@ INVOICE
 
     it "does not result in a negative total" do
       inventory.register 'Tea', '1.00'
-      inventory.register_coupon 'TEATIME', amount: '10.00'.to_d
+      inventory.register_coupon 'TEATIME', amount: '10.00'
 
       cart.use 'TEATIME'
 
@@ -241,7 +241,7 @@ INVOICE
 
     it "shows the discount in the invoice" do
       inventory.register 'Green Tea', '1.00'
-      inventory.register_coupon 'TEA-TIME', amount: '10.00'.to_d
+      inventory.register_coupon 'TEA-TIME', amount: '10.00'
 
       cart.add 'Green Tea', 5
       cart.use 'TEA-TIME'
