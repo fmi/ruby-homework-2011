@@ -1,3 +1,25 @@
+require 'bigdecimal'
+require 'bigdecimal/util'
+
+class BigDecimal
+  alias :original_plus :+
+  alias :original_minus :-
+
+  def +(other)
+    if other.kind_of? String
+      return original_plus other.to_d
+    end
+    original_plus other
+  end
+
+  def -(other)
+    if other.kind_of? String
+      return original_minus other.to_d
+    end
+    original_minus other
+  end
+end
+
 describe Inventory do
   let(:inventory) { Inventory.new }
   let(:cart) { inventory.new_cart }
